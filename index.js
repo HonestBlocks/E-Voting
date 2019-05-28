@@ -2,18 +2,17 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const http = require('http');
-const fs = require('fs');
-const JSZip = require("jszip");
 
-
-
-app = express();
-
-app.use(bodyParser.json());
+const zipcontroller = require('./controllers/zipcontroller');
 const models =  require(path.join(__dirname,'models/voterModel'));
 sequelize = models.sequelize;
 
 static_dir = path.join(__dirname,'static');
+
+app = express();
+
+app.use(bodyParser.json());
+
 app.use(express.static(static_dir));
 
 app.post('/voter_auth', (req,res,next) => {
@@ -35,31 +34,7 @@ app.post('/voter_auth', (req,res,next) => {
                 return res.json(response);
             } 
             else {
-                var dir = path.join(__dirname,'static', voter_id);
-                var zip = new JSZip();
-
-                fs.readdir(dir, function (err, files) {
-                    if (err) {
-                        return console.log('Unable to scan directory: ' + err);
-                    } 
-                    var fileindex = 0;
-                    files.forEach(function (file) {
-                        f = zip.file(file+fileindex,fs.readFileSync(dir+'/'+file)); 
-                    });
-
-                    zip.generateNodeStream({type:'nodebuffer',streamFiles:true})
-                        .pipe(fs.createWriteStream('out.zip'))
-                            .on('finish', function () {
-                                res.download('out.zip');
-                                console.log("out.zip written.");
-                        });
-                
-                });
-                // zip.file()
-                // var kk = zip.file('asd.txt','asdasdasdasd');
-                // console.log(kk);
-                // // console.log(images);
-                
+            zipcontroller.zip(req,res,next);
         }
     }
     }).catch(err => {
