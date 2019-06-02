@@ -1,9 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-const http = require('http');
 
 const zipcontroller = require('./controllers/zipcontroller');
+
 const models =  require(path.join(__dirname,'models/voterModel'));
 sequelize = models.sequelize;
 
@@ -17,7 +17,7 @@ app.use(express.static(static_dir));
 
 app.post('/voter_auth', (req,res,next) => {
     const voter_id = req.body.voter_id;
-
+    console.log(req.get('Cookie'));
     models.findOne({
         where:{
             voterid:voter_id
@@ -30,16 +30,26 @@ app.post('/voter_auth', (req,res,next) => {
             return res.json(response);
         }
         else{
+            var response = {
+                "message" : "User not registered yet"
+            };
             if (voter.photosDir == '') {
                 return res.json(response);
             } 
-            else {
+            else { 
+            res.setHeader('Set-cookie', 'loggedIn=true');
             zipcontroller.zip(req,res,next);
         }
     }
     }).catch(err => {
         console.log(err);
     });
+
+app.post('/dashboard', (req,res,next) => {
+    // session is logged in
+    res.send('<h1>Dashboard</h1>')
+});
+
 
 });
 
