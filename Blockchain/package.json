@@ -1,7 +1,10 @@
 {
   "name": "blockchain-dashboard",
   "version": "1.0.0",
+<<<<<<< HEAD
+=======
   "description": "",
+>>>>>>> parent of 641fcb6... removed sub git dir
   "main": "truffle-config.js",
   "directories": {
     "test": "test"
@@ -14,5 +17,11 @@
   "dependencies": {
     "express": "^4.17.1",
     "web3": "^1.0.0-beta.55"
+<<<<<<< HEAD
+  },
+  "devDependencies": {},
+  "description": ""
+=======
   }
+>>>>>>> parent of 641fcb6... removed sub git dir
 }
