@@ -160,6 +160,12 @@ const askcandidateinfo =  () => {
     })
 }
 
+const askarrlen = () => {
+    readline.question(`Enter number of candidates`, (length) => {
+        resolve(length)
+    })
+}
+
 const main = async () => {
     let userAddress;
     let choice;
@@ -197,7 +203,7 @@ const main = async () => {
     else if(choice == '3'){
         await askcandidateinfo().then((arr) => {
             mycontract.methods.registerCandidates(arr[0],arr[1])
-            .send({from: userAddress})
+            .send({from: userAddress}, {gas:3000000})
             .on('transactionHash', (transactionHash) => {
                 console.log(transactionHash);
             })
@@ -205,10 +211,13 @@ const main = async () => {
     }
 
     else if(choice == '4'){
-        dfksfs
-        sdf
-        sdfsdkfsdlfkk
-        asffaksda;defaultStatus;a
+        await askarrlen().then(length => {
+            mycontract.methods.set_candidates_arr_len(length)
+            .send({from: userAddress})
+            .on('transactionHash', (transactionHash) => {
+                console.log(transactionHash);
+            })
+        })
     }
 
     else if(choice == '5'){
