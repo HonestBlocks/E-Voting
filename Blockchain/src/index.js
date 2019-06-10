@@ -4,7 +4,7 @@ const readline = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout
   })
-const contractaddress = '0x7ce7081433061158b30dd91914629905a9d44a2d'
+const contractaddress = '0x4dd7c594f0a6c74aefb8240dc60694a547d6622b'
 const contractABI = [
 	{
 		"constant": false,
@@ -160,10 +160,23 @@ const askcandidateinfo =  () => {
     })
 }
 
+const askarrlen = () => {
+    return new Promise(function (resolve, reject) {
+        readline.question(`Enter number of candidates`, (length) => {
+            console.log(typeof(length))
+            var ll = parseInt(length,10); 
+            resolve(ll);
+        })
+    })
+}
+
 const main = async () => {
     let userAddress;
     let choice;
     await askaddress().then((address) => {
+
+        console.log(mycontract.methods.set_candidates_arr_len(1).call({ from : address}))
+        console.log('2')
         userAddress = address;
         console.log(userAddress);
     });
@@ -184,8 +197,9 @@ const main = async () => {
     }
     
     else if(choice == '2'){
+        console.log("run");
         await askindex().then((index => {
-        mycontract.methods.candidates_arr(0).call({from : userAddress})
+        mycontract.methods.candidates_arr(index).call({from : userAddress})
         .then((result => {
             console.log(result);
         }))
@@ -197,7 +211,7 @@ const main = async () => {
     else if(choice == '3'){
         await askcandidateinfo().then((arr) => {
             mycontract.methods.registerCandidates(arr[0],arr[1])
-            .send({from: userAddress})
+            .send({from: userAddress}, {gas:3000000})
             .on('transactionHash', (transactionHash) => {
                 console.log(transactionHash);
             })
@@ -205,7 +219,17 @@ const main = async () => {
     }
 
     else if(choice == '4'){
-
+        await askarrlen().then(length => {
+            console.log(typeof(length))
+            mycontract.methods.set_candidates_arr_len(length)
+            .send({from: userAddress, gas: 3000000})
+            .on('transactionHash', (transactionHash) => {
+                console.log(transactionHash);
+            })
+        })
+        .catch(err => {
+            console.log('err')
+        })
     }
 
     else if(choice == '5'){

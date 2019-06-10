@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity >=0.4.22 <0.6.0;
 
 contract Election{
     
@@ -22,9 +22,8 @@ contract Election{
     
     address admin;
     
-    constructor(uint8 _numcandidates) public{
+    constructor() public{
         admin = msg.sender;
-        candidates_arr.length = _numcandidates;
         voters[admin].rights  = true;   
     }
     
@@ -33,24 +32,64 @@ contract Election{
         _;
     }
     
+    // address parser
+    function parseAddr(string memory _a) internal pure returns (address _parsedAddress) {
+    bytes memory tmp = bytes(_a);
+    uint160 iaddr = 0;
+    uint160 b1;
+    uint160 b2;
+    for (uint i = 2; i < 2 + 2 * 20; i += 2) {
+        iaddr *= 256;
+        b1 = uint160(uint8(tmp[i]));
+        b2 = uint160(uint8(tmp[i + 1]));
+        if ((b1 >= 97) && (b1 <= 102)) {
+            b1 -= 87;
+        } else if ((b1 >= 65) && (b1 <= 70)) {
+            b1 -= 55;
+        } else if ((b1 >= 48) && (b1 <= 57)) {
+            b1 -= 48;
+        }
+        if ((b2 >= 97) && (b2 <= 102)) {
+            b2 -= 87;
+        } else if ((b2 >= 65) && (b2 <= 70)) {
+            b2 -= 55;
+        } else if ((b2 >= 48) && (b2 <= 57)) {
+            b2 -= 48;
+        }
+        iaddr += (b1 * 16 + b2);
+    
+    }
+    return address(iaddr);
+    }
+    
+    
+    // set array length
+    function set_candidates_arr_len(uint256 _length) onlyadmin public{
+        candidates_arr.length = _length;    
+    }
+    
 
     // give rights to voter
-    function giveRightToVote(address toVoter) onlyadmin  public {
+    function giveRightToVote(string memory toVoterr) onlyadmin  public {
+        address toVoter = parseAddr(toVoterr);
         require(!voters[toVoter].isvoted, ' You have already voted');
         voters[toVoter].rights = true;
     }
     
     // register candidates
-    function registerCandidates(address _candidate_id, string memory _party) onlyadmin public{
+    function registerCandidates(string memory _candidate_ids, string memory _party) onlyadmin public{
+        address _candidate_id = parseAddr(_candidate_ids);
         candidates_arr[index].candidate_id = _candidate_id;
         candidates_arr[index].party = _party;
         candidates_arr[index].votes_recv = 0;
         index+=1;
     }
-    // Cast Vote
+    
+    // Cast Vote // require only_registered 
     function vote(uint256 _index) public{
         address newvoter = msg.sender;
-        if (voters[newvoter].isvoted || _index >= candidates_arr.length) return;
+        require(!voters[newvoter].isvoted,'You have already Voted. Thanks!');
+        require(_index < candidates_arr.length, 'Select right index please');
         voters[newvoter].vote = _index;
         voters[newvoter].isvoted = true;
         candidates_arr[_index].votes_recv += 1;
@@ -59,36 +98,6 @@ contract Election{
 }
 
 
-    // status
-    // function status() public view returns(address winner_candidate, string memory winner_party){
-    //     uint256 winningVoteCount = 0;
-    //     for(uint8 i=0;i<candidates_arr.length;i+=1){
-    //         if(candidates_arr[i].votes_recv > winningVoteCount){
-    //             winningVoteCount = candidates_arr[i].votes_recv;
-    //             winner_candidate = candidates_arr[i].candidate_id;
-                
-    //             bool check =false;
-    //             for(uint8 j=0; j<parties_arr.length; j+=1){
-    //                 if( parties_arr[j].party == candidates_arr[i].party){
-    //                     parties_arr[j].no_votes +=1;
-    //                     parties_arr[j].no_candidates +=1;
-    //                     check = true;
-    //                     break;
-    //                 }
-    //             }
-    //             if (check == false){
-    //                 parties_arr[party_index].party = candidates_arr[i].party;
-    //                 parties_arr[party_index].no_candidates += 1;
-    //                 parties_arr[party_index].no_votes += 1;
-    //             }
-                
-    //         }
-    //     }
-    // }
-    
-    
-    
-    
     
         // modifier beforestartdate{}
     
