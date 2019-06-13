@@ -1,0 +1,136 @@
+{
+  "_args": [
+    [
+      "react-bootstrap",
+      "/home/siddhant/Desktop/Evoting/client"
+    ]
+  ],
+  "_from": "react-bootstrap@latest",
+  "_hasShrinkwrap": false,
+  "_id": "react-bootstrap@1.0.0-beta.9",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/react-bootstrap",
+  "_nodeVersion": "10.15.3",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-bootstrap_1.0.0-beta.9_1559245157439_0.854774057799697"
+  },
+  "_npmUser": {
+    "email": "monastic.panic@gmail.com",
+    "name": "monastic.panic"
+  },
+  "_npmVersion": "6.9.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "react-bootstrap",
+    "raw": "react-bootstrap",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-1.0.0-beta.9.tgz",
+  "_shasum": "3d9e429fd3d7a81db241aa824646c73e99a8566c",
+  "_shrinkwrap": null,
+  "_spec": "react-bootstrap",
+  "_where": "/home/siddhant/Desktop/Evoting/client",
+  "author": {
+    "email": "stevoland@gmail.com",
+    "name": "Stephen J. Collings"
+  },
+  "bugs": {
+    "url": "https://github.com/react-bootstrap/react-bootstrap/issues"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.2",
+    "@react-bootstrap/react-popper": "1.2.1",
+    "@restart/context": "^2.1.4",
+    "@restart/hooks": "^0.3.0",
+    "classnames": "^2.2.6",
+    "dom-helpers": "^3.4.0",
+    "invariant": "^2.2.4",
+    "keycode": "^2.2.0",
+    "popper.js": "^1.14.7",
+    "prop-types": "^15.7.2",
+    "prop-types-extra": "^1.1.0",
+    "react-overlays": "^1.2.0",
+    "react-transition-group": "^4.0.0",
+    "uncontrollable": "^6.1.0",
+    "warning": "^4.0.3"
+  },
+  "description": "Bootstrap 4 components built with React",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "fileCount": 383,
+    "integrity": "sha512-M0BYLuuUdMITJ16+DDDb1p4vWV87csEBi/uOxZYODuDZh7hvbrJVahfvPXcqeqq4eEpNL+PKSlqb9fNaY0HZyA==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJc8DFmCRA9TVsSAnZWagAAPrMP/A+InmpGGAId5zinSW9J\n06hSdxoVKi4X8IKiofSzEoh8iy0huQfkCyjhPIezL6d9SuBDuouvgIARbuNz\nnibF9nGFPwpFlcm6JDtvteKNUyjU4oed8NDmjyhb5LmHmUwlw93rGsp6TVUT\nh64M3nwlqLfXthaQp21BTShxE5bc9ZmB6U/0OtFZfSJlNWMombNln3+qbshj\nlhK6us+qxBvcfIP6t9Db9AZtVo9DrZL36n3I1vfimdHLmOPLvsZFT5JKooJY\nY7KPMq+z35/HdMk1dznaerdf2U/BtTI138YVjZeTCeNIBEPBM1tM3nAoa73o\nSrjct0X454z2QBAn/ouGAjPL2RDAtC1mhKNbT5WAdmSq2AQ52/lXAULeoZI0\n/wid20DkQIsnWMYLmcFv1KtpABQceL0qdpoMgXh71tY+NbmNOe2d+84RP7mD\nXDs+i4682/alq9ZIyvjWdmHvPrySjzd+cwb6SgFRtRkFg6fErQhOhghxsPex\npE36ZftP1SsclfRm9b5ykp5tw0xFwM3vSE+H6lOrUZSaOGamDoDPxsO9PsgQ\nWwBFcOMDoa+amBTtKPmRD3CVjH7G6tcvt6go1T0PhyDX4xTHegMsxlU1Lr6U\ntJ5PaQJvJBBxKhFCKXAKjxGtlnWbB1sgNfh5N3cCyWskRRubL6j+V9J8q+4q\n8BHK\r\n=1IuU\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "3d9e429fd3d7a81db241aa824646c73e99a8566c",
+    "tarball": "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-1.0.0-beta.9.tgz",
+    "unpackedSize": 1207951
+  },
+  "homepage": "https://react-bootstrap.github.io/",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "keywords": [
+    "bootstrap",
+    "ecosystem-react",
+    "react",
+    "react-component"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "monastic.panic",
+      "email": "monastic.panic@gmail.com"
+    },
+    {
+      "name": "mtscout6",
+      "email": "mtscout6@gmail.com"
+    },
+    {
+      "name": "stevoland",
+      "email": "stevoland@gmail.com"
+    },
+    {
+      "name": "taion",
+      "email": "tesrin@gmail.com"
+    }
+  ],
+  "module": "es/index.js",
+  "name": "react-bootstrap",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "readme": "# React-Bootstrap \n\n[![Travis CI Build status][travis-badge]][travis-link]\n[![Appveyor Build status][appveyor-badge]][appveyor-link]\n[![npm][npm-badge]][npm]\n\n[Bootstrap 4][bootstrap] components built with [React][react].\n\n[![Codecov][codecov-badge]][codecov]\n[![Discord][discord-badge]][discord]\n[![Thinkful][thinkful-badge]][thinkful]\n\n## Docs\n\nSee the [documentation][documentation] with live editable examples and API documention.\n\nTo find the documentation for the latest Bootstrap 3 compatible release, [go here](https://5c507d49471426000887a6a7--react-bootstrap.netlify.com/).\n\n### Migrating from Bootstrap 3 to Bootstrap 4\n\nIf you would like to update React-Bootstrap within an existing project to use Bootstrap 4, please read our docs for **[migrating to React-Bootstrap V1](https://react-bootstrap.github.io/migrating/)**.\n\n## Related modules\n\n- [react-router-bootstrap][react-router-bootstrap] – Integration with [React Router][react-router]\n- [Awesome React Bootstrap Components][awesome-react-bootstrap-components] - Additional components like off-canvas navbar, switch and sliders.\n\n## Local setup\n\nYarn is our package manager of choice here. Check out setup\ninstructions [here](https://yarnpkg.com/en/docs/install) if you don't have it installed already.\nAfter that you can run `yarn run bootstrap` to install all the needed dependencies.\n\nFrom there you can:\n\n- Run the tests once with `yarn test` (Or run them in watch mode with `yarn run tdd`).\n- Start a local copy of the docs site with `yarn start`\n- Or build a local copy of the library with `yarn run build`\n\n## Contributions\n\nYes please! See the [contributing guidelines][contributing] for details.\n\n[bootstrap]: https://getbootstrap.com/\n[react]: https://reactjs.org/\n[documentation]: https://react-bootstrap.github.io/\n[contributing]: CONTRIBUTING.md\n[travis-badge]: https://travis-ci.org/react-bootstrap/react-bootstrap.svg?branch=master\n[travis-link]: https://travis-ci.org/react-bootstrap/react-bootstrap\n[appveyor-badge]: https://ci.appveyor.com/api/projects/status/ylitpyo6n5yq1s6i?svg=true\n[appveyor-link]: https://ci.appveyor.com/project/react-bootstrap/react-bootstrap\n[npm-badge]: https://badge.fury.io/js/react-bootstrap.svg\n[npm]: http://badge.fury.io/js/react-bootstrap\n[react-router-bootstrap]: https://github.com/react-bootstrap/react-router-bootstrap\n[react-router]: https://github.com/reactjs/react-router\n[react-bootstrap-extended]: https://github.com/rbalicki2/react-bootstrap-extended\n[awesome-react-bootstrap-components]: https://github.com/Hermanya/awesome-react-bootstrap-components\n[thinkful-badge]: https://tf-assets-staging.s3.amazonaws.com/badges/thinkful_repo_badge.svg\n[thinkful]: http://start.thinkful.com/react/?utm_source=github&utm_medium=badge&utm_campaign=react-bootstrap\n[codecov-badge]: https://img.shields.io/codecov/c/github/react-bootstrap/react-bootstrap/master.svg\n[codecov]: https://codecov.io/gh/react-bootstrap/react-bootstrap\n[discord-badge]: https://img.shields.io/badge/Discord-Join%20chat%20%E2%86%92-738bd7.svg\n[discord]: https://discord.gg/0ZcbPKXt5bXLs9XK\n",
+  "readmeFilename": "README.md",
+  "release": {
+    "publishDir": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-bootstrap/react-bootstrap.git"
+  },
+  "sideEffects": false,
+  "version": "1.0.0-beta.9"
+}
