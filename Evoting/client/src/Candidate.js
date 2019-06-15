@@ -8,14 +8,21 @@ class Candidate extends React.Component {
         this.state = {
             candidateAddress : null,
             candidateParty : null,
-            length: this.props.array_len
+            length: null
         }
     }
     
+    componentWillReceiveProps(updatedprop){
+        if(this.props != updatedprop){
+            this.setState({'length' : updatedprop.array_len});
+        }
+    }
+
     handleChange = (event) => {
         switch(event.target.name){
             case 'candidateaddress':
-                this.setState({'candidateAddress': event.targe.value})
+                this.setState({'candidateAddress': event.target.value})
+                // console.log(this.state)
                 break;
             
             case 'party':
@@ -25,22 +32,28 @@ class Candidate extends React.Component {
     }
 
     registerCandidate = () => {
-        this.state.length-=1
+        // console.log('statqw' + this.state.length)
+        this.state.length -= 1
+        // console.log(this.state.length)
         if (this.state.length >= 0){
-            this.props.candidate_info(this.state.candidateAddress, this.state.candidateParty) 
+            this.props.candidate_info(this.state.candidateAddress, this.state.candidateParty)
+            this.props.array_len_recv(this.state.length) 
         }
         else{
             window.alert('You have already registered enough candidates')
         }
     }
 
+
     render() {
+        // console.log("props", this.props.array_len)
+        // console.log("props", this.state.length)
         return (
-            <Form onSubmit = {this.registerCandidate}>
+            <Form>
                 <Form.Group controlId={'Candidate'}>
                     <Row>
                     <Form.Control 
-                        name = 'Candidateaddress'
+                        name = 'candidateaddress'
                         type="text" 
                         placeholder = 'Enter address'
                         onChange = {this.handleChange}
@@ -54,7 +67,7 @@ class Candidate extends React.Component {
                         value = {this.state.candidateParty}
                     />
                     </Row>
-                    <Button type="Submit">Add candidate</Button>
+                    <Button value="Add" onClick = {this.registerCandidate}>Add candidate</Button>
                     </Form.Group> 
             </Form>
             )

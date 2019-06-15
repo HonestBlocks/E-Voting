@@ -4,6 +4,7 @@ import getWeb3 from "./utils/getWeb3";
 
 import "./App.css";
 import Dashboard from "./Dashboard.js";
+import { type } from "os";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -16,26 +17,10 @@ export default class App extends React.Component {
       candidate_arr_len: null,
       candidateaddress: undefined,
       politicalparty:undefined,
+      voters : null
     }
     // this.handleIssueElection = this.handleIssueElection.bind(this)
     // this.handleChange = this.handleChange.bind(this)
-  }
-
-  handleChange(event)
-  {
-    switch(event.target.name){
-        case 'candidate_arr_len':
-            this.setState({'candidate_arr_len':event.target.value})
-            return
-
-        case "Candidateaddress":
-            this.setState({'candidateAddress': event.target.value})
-            break;
-
-        case "party":
-            this.setState({"politicalparty" : event.target.value})
-            break;
-    }
   }
 
   componentDidMount = async () => {
@@ -61,8 +46,17 @@ export default class App extends React.Component {
       // example of interacting with the contract's methods.
       await this.setState({ ElectionInstance:instance ,web3: web3, account: accounts[0] })
       console.log("Hiiii", this.state.web3)
-      // this.addEventListener(this)
-    } catch (error) {
+
+      // setting proxy server
+      await this.callAPIBackend()
+      .then(res => { 
+        this.setState({ voters: res.Voters })
+      })
+      .catch(err => console.log(err));
+
+      console.log(this.state.voters[0].voterid)
+
+    }catch (error) {
       // Catch any errors for any of the above operations.
       alert(
         `Failed to load web3, accounts, or contract. Check console for details.`,
@@ -70,7 +64,50 @@ export default class App extends React.Component {
       console.error(error);
     }
   };
+
+  callAPIBackend = async () => {
+    const response_voters =  await fetch('/admin')
+    const body = await response_voters.json();
+    
+    if (response_voters.status !== 200) {
+      throw Error(body.message) 
+    }
+    console.log(body)
+    return body
+  } 
+
+
+  mycallback =  async (arr_len) => {
+    console.log('Application', typeof(parseInt(arr_len)))
+    await this.setState({"candidate_arr_len" : arr_len})
+
+    await this.state.ElectionInstance.methods.set_candidates_arr_len(this.state.candidate_arr_len)
+                .send({from : this.state.account})
+                .on('confirmation', (connum,receipt) => {
+                  console.log(connum, receipt)
+                })
+    
+    console.log('YAY', this.state.candidate_arr_len)
+  }
+
+  mycallback2 = async (address, party) => {
+    await this.setState({'candidateaddress' : address,'politicalparty': party })
+
+    await this.state.ElectionInstance.methods
+          .registerCandidates(this.state.candidateaddress, this.state.politicalparty)
+          .send({from : this.state.account, gas : 300000})
+          .on('confirmation', (connum,receipt) => {
+            console.log(connum, receipt)
+          })
+
+    console.log('YAY2', this.state.candidateaddress, this.state.politicalparty)
+  }
   
+  mycallback3 = async (VoterId) => {
+    await console.log('YAY3', VoterId)
+  }
+
+
   render() {  
     if (!this.state.web3) {
       console.log("llll"+this.state.web3)
@@ -79,20 +116,13 @@ export default class App extends React.Component {
     return (
             <div>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossOrigin="anonymous" />
-             <Dashboard setCandidate_arr_len = {this.mycallback} setCandidate_info = {this.mycallback2} />  
+             <Dashboard 
+             setCandidate_arr_len = {this.mycallback} 
+             setCandidate_info = {this.mycallback2} 
+             registerVoter = {this.mycallback3} voterlist = {this.state.voters}/>
             </div>
     );
   }
 
-  mycallback = (arr_len) => {
-    console.log('Application', arr_len)
-    this.setState({"candidate_arr_len" : arr_len})
-    console.log('YAY', this.state.candidate_arr_len)
-  }
-
-  mycallback2 = (address, party) => {
-    this.setState({'candidateaddress' : address,'politicalparty': party })
-    console.log('YAY2', this.state.candidateaddress, this.state.politicalparty)
-  }
 }
 
