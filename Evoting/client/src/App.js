@@ -4,7 +4,7 @@ import getWeb3 from "./utils/getWeb3";
 
 import "./App.css";
 import Dashboard from "./Dashboard.js";
-import { type } from "os";
+import {Accounts} from 'web3-eth-accounts';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -48,7 +48,7 @@ export default class App extends React.Component {
       console.log("Hiiii", this.state.web3)
 
       // setting proxy server
-      await this.callAPIBackend()
+      await this.callAPIBackend_recv()
       .then(res => { 
         this.setState({ voters: res.Voters })
       })
@@ -65,7 +65,7 @@ export default class App extends React.Component {
     }
   };
 
-  callAPIBackend = async () => {
+  callAPIBackend_recv = async () => {
     const response_voters =  await fetch('/admin')
     const body = await response_voters.json();
     
@@ -75,6 +75,20 @@ export default class App extends React.Component {
     console.log(body)
     return body
   } 
+
+  callAPIBackend_send = async (wallet, voterid) => {
+    var resp = await fetch('/admin', {method: 'POST',
+                                     body: JSON.stringify(
+                                       {"address": wallet[0]['address'],
+                                      "privateKey":wallet[0]['privateKey'],
+                                      'voterid':voterid}
+                                      ),
+                                      headers: {'Content-Type': 'application/json' }
+                                    })
+  
+  console.log(resp)
+  return resp;
+  }
 
 
   mycallback =  async (arr_len) => {
@@ -86,7 +100,6 @@ export default class App extends React.Component {
                 .on('confirmation', (connum,receipt) => {
                   console.log(connum, receipt)
                 })
-    
     console.log('YAY', this.state.candidate_arr_len)
   }
 
@@ -104,7 +117,21 @@ export default class App extends React.Component {
   }
   
   mycallback3 = async (VoterId) => {
-    await console.log('YAY3', VoterId)
+    if(this.state.voters.find(x => x.voterid == VoterId)){
+      // generate wallet
+      var wallet = await this.state.web3.eth.accounts.wallet.create(1);
+      // send wallet 
+      await this.callAPIBackend_send(wallet.accounts, VoterId)
+      .then(async (msg) => {
+        // give voting rights and send ethers
+        await this.state.ElectionInstance.methods.giveRightToVote(wallet[0]['address'])
+        .send({from:this.state.account})
+        .on('confirmation', (connum,receipt) => {
+          console.log(connum, receipt)
+        })
+      })
+      .catch(err => console.log(err));;
+    }
   }
 
 

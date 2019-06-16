@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const fs = require('fs');
 
 const zipcontroller = require('./server/controllers/zipcontroller');
 
@@ -51,6 +52,19 @@ app.get('/admin', (req,res) => {
     models.findAll().then((voters) => {
         res.send({Voters  : voters });
       })
+})
+
+app.post('/admin', (req,res) => {
+    console.log(req.body);
+    dict = {
+        'address' : req.body.address,
+        'privateKey' : req.body.privateKey
+    }
+    fs.writeFile('./server/static/'+ req.body.voterid +'/wallet.txt', JSON.stringify(dict) , function (err) {
+        if (err) throw err;
+        console.log('Saved!');
+    });
+    res.send('Done');
 })
 
 sequelize
