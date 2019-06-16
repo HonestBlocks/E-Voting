@@ -72,7 +72,8 @@ contract Election{
     // give rights to voter
     function giveRightToVote(string memory toVoterr) onlyadmin  public {
         address toVoter = parseAddr(toVoterr);
-        require(!voters[toVoter].isvoted, ' You have already voted');
+        require(!voters[toVoter].isvoted, ' Voter has already voted');
+        toVoter.transfer(10);
         voters[toVoter].rights = true;
     }
     
