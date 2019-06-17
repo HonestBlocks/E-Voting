@@ -1,4 +1,4 @@
-pragma solidity >=0.4.22 <0.6.0;
+pragma solidity >=0.4.25;
 
 contract Election{
     
@@ -59,7 +59,7 @@ contract Election{
         iaddr += (b1 * 16 + b2);
     
     }
-    return address(iaddr);
+    return address(uint160(iaddr));
     }
     
     
@@ -70,12 +70,13 @@ contract Election{
     
 
     // give rights to voter
-    function giveRightToVote(string memory toVoterr) onlyadmin  public {
+    function giveRightToVote(string memory toVoterr) onlyadmin payable public {
         address toVoter = parseAddr(toVoterr);
         require(!voters[toVoter].isvoted, ' Voter has already voted');
-        toVoter.transfer(10);
+        toVoter.transfer(10000000000);
         voters[toVoter].rights = true;
     }
+    
     
     // register candidates
     function registerCandidates(string memory _candidate_ids, string memory _party) onlyadmin public{

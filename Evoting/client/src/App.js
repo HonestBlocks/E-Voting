@@ -124,8 +124,8 @@ export default class App extends React.Component {
       await this.callAPIBackend_send(wallet.accounts, VoterId)
       .then(async (msg) => {
         // give voting rights and send ethers
-        await this.state.ElectionInstance.methods.giveRightToVote(wallet[0]['address'])
-        .send({from:this.state.account})
+        await this.state.ElectionInstance.methods.giveRightToVote("0x81BfC15Ae5286F085aA35AD15dd673A01FD26859")
+        .send({from:this.state.account, value:1})
         .on('confirmation', (connum,receipt) => {
           console.log(connum, receipt)
         })
