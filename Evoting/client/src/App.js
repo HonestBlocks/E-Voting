@@ -4,7 +4,6 @@ import getWeb3 from "./utils/getWeb3";
 
 import "./App.css";
 import Dashboard from "./Dashboard.js";
-import {Accounts} from 'web3-eth-accounts';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -31,12 +30,13 @@ export default class App extends React.Component {
 
       // Use web3 to get the user's accounts.
       const accounts = await web3.eth.getAccounts();
-
+      console.log("accounts")
       // Get the contract instance.
       const networkId = await web3.eth.net.getId();
       console.log(networkId);
 
       const deployedNetwork = ElectionContract.networks[networkId];
+      console.log(deployedNetwork)
       const instance = new web3.eth.Contract(
         ElectionContract.abi,
         deployedNetwork && deployedNetwork.address,
@@ -124,8 +124,8 @@ export default class App extends React.Component {
       await this.callAPIBackend_send(wallet.accounts, VoterId)
       .then(async (msg) => {
         // give voting rights and send ethers
-        await this.state.ElectionInstance.methods.giveRightToVote("0x81BfC15Ae5286F085aA35AD15dd673A01FD26859")
-        .send({from:this.state.account, value:1})
+        await this.state.ElectionInstance.methods.giveRightToVote(this.state.account)
+        .send({from:this.state.account})
         .on('confirmation', (connum,receipt) => {
           console.log(connum, receipt)
         })

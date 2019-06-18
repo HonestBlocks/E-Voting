@@ -16,6 +16,8 @@ contract Election{
         uint256 votes_recv;
     }
     candidate[] public  candidates_arr;
+     uint256 public candidates_arr_length = 0 ;
+    
     
     uint256 index = 0;
     uint256 party_index =0;
@@ -65,15 +67,15 @@ contract Election{
     
     // set array length
     function set_candidates_arr_len(uint256 _length) onlyadmin public{
-        candidates_arr.length = _length;    
+        candidates_arr.length = _length;
+        candidates_arr_length = _length;
     }
     
 
     // give rights to voter
-    function giveRightToVote(string memory toVoterr) onlyadmin payable public {
+    function giveRightToVote(string memory toVoterr) onlyadmin public {
         address toVoter = parseAddr(toVoterr);
         require(!voters[toVoter].isvoted, ' Voter has already voted');
-        toVoter.transfer(10000000000);
         voters[toVoter].rights = true;
     }
     
@@ -96,6 +98,10 @@ contract Election{
         voters[newvoter].isvoted = true;
         candidates_arr[_index].votes_recv += 1;
     }
+
+    // To get the candidates list first call candidates_arr_length 
+    // then iterate n times to fetch candidate's info one by one 
+    // by calling candidates_arr
 
 }
 

@@ -5,7 +5,9 @@ module.exports = function(deployer) {
   deployer.deploy(SimpleStorage);
 };
 
-module.exports = function(deployer) {
+module.exports =  function(deployer) {
+  console.log('deployed')
   deployer.deploy(Election);
+  console.log('deployed')
 }
 
