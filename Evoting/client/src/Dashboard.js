@@ -8,7 +8,7 @@ class Dashboard extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            candidate_arr_len : null,
+            candidate_arr_len : null
         }
     }
 
@@ -40,19 +40,12 @@ class Dashboard extends React.Component{
     }
 
 
+
     render() {
         return(
             <div>
                 <Card>
                     <Card.Header>
-                        <Nav variant="tabs" defaultActiveKey="#setElection">
-                            <Nav.Item>
-                            <Nav.Link href="#setElection"> Issue election </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                            <Nav.Link href="#results"> Results </Nav.Link>
-                            </Nav.Item>
-                        </Nav>
                     </Card.Header>
                     <Card.Body id='setElection'>
                         <Card.Title>
@@ -72,11 +65,9 @@ class Dashboard extends React.Component{
                                     <Form.Text className="text-muted">
                                     Be sure! it costs gas.
                                     </Form.Text>
-                                    {/* {console.log("######"+this.state.candidate_arr_len)} */}
                                     <Button value="submit" onClick={this.setcandidate_arr_len}>Set Number of Candidates</Button>
                                 </Form.Group>
                             </Form>
-                            {/* {console.log("######"+this.state.candidate_arr_len)} */}
                             <Candidate candidate_info = {this.mycallback} array_len = {this.state.candidate_arr_len}  array_len_recv = {this.update_arr_len}/>
                             
                         </Card.Text>

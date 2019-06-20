@@ -1,10 +1,12 @@
 import React  from "react";
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import ElectionContract from "./contracts/Election.json";
 import getWeb3 from "./utils/getWeb3";
 
 import "./App.css";
 import Dashboard from "./Dashboard.js";
-import {Accounts} from 'web3-eth-accounts';
+import Results from "./Results"
+
 
 export default class App extends React.Component {
   constructor(props) {
@@ -17,7 +19,8 @@ export default class App extends React.Component {
       candidate_arr_len: null,
       candidateaddress: undefined,
       politicalparty:undefined,
-      voters : null
+      voters : null,
+      results:undefined
     }
     // this.handleIssueElection = this.handleIssueElection.bind(this)
     // this.handleChange = this.handleChange.bind(this)
@@ -31,12 +34,13 @@ export default class App extends React.Component {
 
       // Use web3 to get the user's accounts.
       const accounts = await web3.eth.getAccounts();
-
+      console.log("accounts")
       // Get the contract instance.
       const networkId = await web3.eth.net.getId();
       console.log(networkId);
 
       const deployedNetwork = ElectionContract.networks[networkId];
+      console.log(deployedNetwork)
       const instance = new web3.eth.Contract(
         ElectionContract.abi,
         deployedNetwork && deployedNetwork.address,
@@ -92,7 +96,7 @@ export default class App extends React.Component {
 
 
   mycallback =  async (arr_len) => {
-    console.log('Application', typeof(parseInt(arr_len)))
+    console.log('Application', parseInt(arr_len))
     await this.setState({"candidate_arr_len" : arr_len})
 
     await this.state.ElectionInstance.methods.set_candidates_arr_len(this.state.candidate_arr_len)
@@ -124,7 +128,7 @@ export default class App extends React.Component {
       await this.callAPIBackend_send(wallet.accounts, VoterId)
       .then(async (msg) => {
         // give voting rights and send ethers
-        await this.state.ElectionInstance.methods.giveRightToVote(wallet[0]['address'])
+        await this.state.ElectionInstance.methods.giveRightToVote("0x0f067F4882412D2612bdCB8D2291b3B5c7e0f5B0")
         .send({from:this.state.account})
         .on('confirmation', (connum,receipt) => {
           console.log(connum, receipt)
@@ -134,6 +138,15 @@ export default class App extends React.Component {
     }
   }
 
+  fetchresultscallback = async () => {
+    await this.state.ElectionInstance.methods.results()
+    .call({from : this.state.account})
+    .then((result) => {
+      this.setState({"results": result});
+      console.log("YAYYAA"+ this.state.results[0])
+    })
+  }
+
 
   render() {  
     if (!this.state.web3) {
@@ -141,13 +154,19 @@ export default class App extends React.Component {
       return <div>Loading Web3, accounts, and contract...</div>;
     }
     return (
-            <div>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossOrigin="anonymous" />
-             <Dashboard 
-             setCandidate_arr_len = {this.mycallback} 
-             setCandidate_info = {this.mycallback2} 
-             registerVoter = {this.mycallback3} voterlist = {this.state.voters}/>
-            </div>
+      // <Dashboard setCandidate_arr_len = {this.mycallback}
+      // setCandidate_info = {this.mycallback2}
+      // registerVoter = {this.mycallback3} voterlist = {this.state.voters}/> 
+          <Router>
+              <div>
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossOrigin="anonymous" />
+              
+              <Route exact path="/" render={(props) => <Dashboard {...props} setCandidate_arr_len = {this.mycallback}
+                                                      setCandidate_info = {this.mycallback2}
+                                                      registerVoter = {this.mycallback3} voterlist = {this.state.voters}/> } />
+              <Route path="/results" render={(props) => <Results {...props} fetchResults = {this.fetchresultscallback} results = {this.state.results} />} />
+              </div>
+          </Router>
     );
   }
 

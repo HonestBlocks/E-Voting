@@ -8,12 +8,15 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "ethereumjs-wallet": "^0.6.0",
     "express": "^4.17.1",
     "jszip": "^3.2.1",
     "multer": "^1.4.1",
     "mysql2": "^1.6.5",
     "nodemon": "^1.19.1",
-    "sequelize": "^5.8.6"
+    "sequelize": "^5.8.6",
+    "truffle-hdwallet-provider": "^1.0.10",
+    "web3-provider-engine": "^15.0.0"
   },
   "devDependencies": {},
   "scripts": {

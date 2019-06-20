@@ -48,6 +48,7 @@ app.post('/voter_auth', (req,res,next) => {
 
 });
 
+
 app.get('/admin', (req,res) => {
     models.findAll().then((voters) => {
         res.send({Voters  : voters });
