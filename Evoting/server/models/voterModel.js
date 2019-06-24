@@ -1,25 +1,22 @@
-const Sequelize = require('sequelize');
-
-const sequelize = new Sequelize('Evoting','root', 'password', {
-    dialect: 'mysql',
-    host:'localhost'
-});
-
-const VoterModel =  sequelize.define('voter',{
+module.exports = (sequelize, type) => {
+    return sequelize.define('voter',{
     voterid:{
-        type: Sequelize.STRING,
+        type: type.STRING,
         autoIncrement:false,
         allowNull:false,
         primaryKey: true
     },
     name:{
-        type:Sequelize.STRING,    
+        type:type.STRING,    
         allowNull:false 
     },
     photosDir:{
-        type:Sequelize.STRING,
+        type:type.STRING,
         allowNull: true 
+    },
+    address:{
+        type:type.STRING,
+        allowNull: false
     }
 });
-
-module.exports = VoterModel;
+}

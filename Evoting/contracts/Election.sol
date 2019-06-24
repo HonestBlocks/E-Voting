@@ -102,20 +102,18 @@
             candidates_arr[_index].votes_recv += 1;
         }
 
-        // To get the candidates list first call candidates_arr_length 
-        // then iterate n times to fetch candidate's info one by one 
-        // by calling candidates_arr
+
 
         function results() onlyadmin public returns(uint256 _BJP1,uint256 _CONGRESS1,uint256 _AAP1, uint256 _OTHERS1)  {
     
             for(uint256 i = 0; i < candidates_arr_length; i++){
-                if(keccak256(candidates_arr[i].party)  == keccak256('BJP')){
+                if(keccak256(abi.encodePacked(candidates_arr[i].party))  == keccak256('BJP')){
                     _BJP += candidates_arr[i].votes_recv;
                 }
-                else if(keccak256(candidates_arr[i].party)  == keccak256('CONGRESS')){
+                else if(keccak256(abi.encodePacked(candidates_arr[i].party))  == keccak256('CONGRESS')){
                     _CONGRESS+=candidates_arr[i].votes_recv;
-                }
-                else if(keccak256(candidates_arr[i].party)  == keccak256('AAP')){
+                }   
+                else if(keccak256(abi.encodePacked(candidates_arr[i].party))  == keccak256('AAP')){
                     _AAP+=candidates_arr[i].votes_recv;
                 }
                 else{

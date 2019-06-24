@@ -12,6 +12,7 @@ class Dashboard extends React.Component{
         }
     }
 
+
     setcandidate_arr_len = () => {
         // console.log("workkk",this.state.candidate_arr_len)
         this.props.setCandidate_arr_len(this.state.candidate_arr_len)
@@ -78,13 +79,13 @@ class Dashboard extends React.Component{
                             <h3>Register Voters</h3>
                     </Card.Title>
                     <Card.Text>
-                        <Voter registerVoter = {this.registerVoterCallback}  voterlist ={this.props.voterlist}/>
+                        <Voter registerVoter = {this.registerVoterCallback}/>
                     </Card.Text>
                     </Card.Body>
                 </Card>
             </div>
             )    
-        }
+    }
 }
 
 export default Dashboard
