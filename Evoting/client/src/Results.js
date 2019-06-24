@@ -47,7 +47,8 @@ class Results extends React.Component {
                 }
                 var datatable = {...this.state.dataPie}
                 datatable.datasets[0].data = data
-                await this.setState({datatable })
+                await this.setState({datatable})
+                console.log(this.state.dataPie.datasets.data)
             }
         }
     }

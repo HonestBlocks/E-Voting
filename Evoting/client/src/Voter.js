@@ -5,17 +5,17 @@ class Voter extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            VoterId : null
+            VoterId : null,
         }
-    console.log(props.voterslist)
     }
+
+    
 
 
     handleChange = (event) => {
         switch(event.target.name){
             case 'voter':
                 this.setState({'VoterId': event.target.value})
-                // console.log(this.state)
                 break;
         }
     }
@@ -26,7 +26,9 @@ class Voter extends React.Component {
     }
 
     render() {
+        
        return(
+        <div>
         <Form>
             <Form.Control 
                 name="voter"
@@ -37,6 +39,7 @@ class Voter extends React.Component {
             /> 
             <Button value="submit" onClick = {this.registerVoter}> Add Voter </Button>
         </Form>
+        </div>
        )
     }
 }
