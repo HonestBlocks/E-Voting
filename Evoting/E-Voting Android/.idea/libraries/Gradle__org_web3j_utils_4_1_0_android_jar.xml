@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.web3j:utils:4.1.0-android@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.web3j/utils/4.1.0-android/df07016335468901638c9ac9786f3aa851d0e0b4/utils-4.1.0-android.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.web3j/utils/4.1.0-android/e55beaddb5f03a70f6f4fe958d1bd9ad584ec47c/utils-4.1.0-android-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

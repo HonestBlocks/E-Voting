@@ -1,0 +1,294 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:2:1-95:12
+INJECTED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:2:1-95:12
+INJECTED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:2:1-95:12
+INJECTED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:2:1-95:12
+MERGED from [com.android.databinding:adapters:3.4.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\484b1553d5d77529d2a9d04126165bd6\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.databinding:library:3.4.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\37988b53419c2aa35d1f8b170336e21a\AndroidManifest.xml:17:1-24:12
+MERGED from [:openCVLibrary2410] C:\Users\User\Desktop\Implementation\E-Voting Android\openCVLibrary2410\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c332d6f0d064ea411b2cb022839cfdc6\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e7abc5ec8eb6093f0a0700a469a749d2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\935e109beab0ba2596160a3873fbfa8a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\cfd3e47bbfd47cb264752251bae1ad31\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\945d4a88819ee19e6e735287246e96a6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\0d9a83a2a8d5c3d32feb8b8b144ccf35\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ae77917b7a0205818c16428577e3c6a4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\8bcd6cc1480b163368f569542e496ea1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9ebe2c34ae7f9c58606874ecd343dfb8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b7b126974729d471eef89832fb051cdb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\1b27bb0f3e5fb99419dff040ce0cb824\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\5c6a658238652a7f0230df2f8667a45c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\55cf9265050ac83bfd3fbc171fe6d2f9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e4284bcea19b6ce85aed70a3f46b6562\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9b67de6eea51fa6d918d5c48d96e0f01\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7ff35f4bc83336da47a9f37c4d8ed666\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d7dd40ed127f2044d52565a90d182b53\AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\445ab372fdd09841a40d5b63f3884ddd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\efb337ccf6e842d37f4adcb077c4613a\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f562e339d50edf6b46af7ea6e80678c0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c8fb490d4393cc551b7fe183a6258e04\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\221d9b002112bd4db6ff154613ca4684\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\8dbe694f5906614f023590f132c8b7bc\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c67b42419a990c6e4fbde7a9f5040311\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f56f9997f538fbaf086e49df47d2b072\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7deabd22f0360c17b3d8c23597ad429d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c5f66c5a05901498d7251a2e603ccd1c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d77c51ca0fc5b72d010e364883c5691a\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:2:1-95:12
+INJECTED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:2:1-95:12
+INJECTED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:2:1-95:12
+	package
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:3:5-38
+		INJECTED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:6:5-30
+		INJECTED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:5:5-29
+		INJECTED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml
+	android:installLocation
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:4:5-35
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:8:22-78
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:9:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:10:5-80
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:10:22-77
+uses-feature#android.hardware.fingerprint
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:13:5-14:34
+	android:required
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:14:9-32
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:13:19-62
+uses-permission#android.permission.USE_FINGERPRINT
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:16:5-17:61
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:17:9-58
+supports-screens
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:19:5-24:39
+	android:largeScreens
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:21:9-36
+	android:smallScreens
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:24:9-36
+	android:normalScreens
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:22:9-37
+	android:resizeable
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:23:9-34
+	android:anyDensity
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:20:9-34
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:26:5-65
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:26:22-62
+uses-feature#android.hardware.camera
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:28:5-30:10
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:29:9-47
+uses-feature#android.hardware.camera.autofocus
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:31:5-33:11
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:32:9-57
+uses-feature#android.hardware.camera.front
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:34:5-36:11
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:35:9-53
+uses-feature#android.hardware.camera.front.autofocus
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:37:5-39:12
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:38:9-63
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:41:5-75
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:41:22-72
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:44:5-79
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:44:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:45:5-76
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:45:22-73
+application
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:47:5-93:19
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c332d6f0d064ea411b2cb022839cfdc6\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c332d6f0d064ea411b2cb022839cfdc6\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d7dd40ed127f2044d52565a90d182b53\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d7dd40ed127f2044d52565a90d182b53\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\efb337ccf6e842d37f4adcb077c4613a\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\efb337ccf6e842d37f4adcb077c4613a\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d7dd40ed127f2044d52565a90d182b53\AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:49:9-41
+	android:theme
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:50:9-40
+activity#cultoftheunicorn.marvel.MainActivity
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:52:9-62:20
+	android:screenOrientation
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:55:13-49
+	android:label
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:54:13-44
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:53:13-64
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:56:13-61:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:57:17-69
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:57:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:59:17-60:22
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:59:27-74
+activity#cultoftheunicorn.marvel.Recognize
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:63:9-66:49
+	android:screenOrientation
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:65:13-50
+	android:label
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:66:13-47
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:64:13-61
+activity#cultoftheunicorn.marvel.fingerprintSensor
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:67:9-69:57
+	android:screenOrientation
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:68:13-49
+	android:label
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:69:13-55
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:67:19-75
+activity#cultoftheunicorn.marvel.SecondActivity
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:70:9-71:51
+	android:screenOrientation
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:71:13-49
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:70:19-72
+activity#cultoftheunicorn.marvel.ButtonChoice
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:72:9-73:52
+	android:screenOrientation
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:73:13-50
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:72:19-47
+activity#cultoftheunicorn.marvel.Training
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:74:9-77:53
+	android:screenOrientation
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:77:13-50
+	android:label
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:76:13-37
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:75:13-60
+activity#cultoftheunicorn.marvel.NameActivity
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:78:9-81:51
+	android:screenOrientation
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:81:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:80:13-56
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:79:13-64
+activity#cultoftheunicorn.marvel.CandidateSelection
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:82:9-84:51
+	android:screenOrientation
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:84:13-49
+	android:label
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:83:13-48
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:82:19-76
+activity#cultoftheunicorn.marvel.ReviewResults
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:85:9-87:53
+	android:screenOrientation
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:87:13-50
+	android:label
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:86:13-44
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:85:19-71
+activity#cultoftheunicorn.marvel.EtherAct
+ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:88:9-90:51
+	android:screenOrientation
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:90:13-49
+	android:label
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:89:13-46
+	android:name
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml:88:19-66
+uses-sdk
+INJECTED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml
+MERGED from [com.android.databinding:adapters:3.4.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\484b1553d5d77529d2a9d04126165bd6\AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:adapters:3.4.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\484b1553d5d77529d2a9d04126165bd6\AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:library:3.4.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\37988b53419c2aa35d1f8b170336e21a\AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:library:3.4.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\37988b53419c2aa35d1f8b170336e21a\AndroidManifest.xml:22:5-44
+MERGED from [:openCVLibrary2410] C:\Users\User\Desktop\Implementation\E-Voting Android\openCVLibrary2410\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:40
+MERGED from [:openCVLibrary2410] C:\Users\User\Desktop\Implementation\E-Voting Android\openCVLibrary2410\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:40
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c332d6f0d064ea411b2cb022839cfdc6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c332d6f0d064ea411b2cb022839cfdc6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e7abc5ec8eb6093f0a0700a469a749d2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e7abc5ec8eb6093f0a0700a469a749d2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\935e109beab0ba2596160a3873fbfa8a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\935e109beab0ba2596160a3873fbfa8a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\cfd3e47bbfd47cb264752251bae1ad31\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\cfd3e47bbfd47cb264752251bae1ad31\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\945d4a88819ee19e6e735287246e96a6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\945d4a88819ee19e6e735287246e96a6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\0d9a83a2a8d5c3d32feb8b8b144ccf35\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\0d9a83a2a8d5c3d32feb8b8b144ccf35\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ae77917b7a0205818c16428577e3c6a4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ae77917b7a0205818c16428577e3c6a4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\8bcd6cc1480b163368f569542e496ea1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\8bcd6cc1480b163368f569542e496ea1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9ebe2c34ae7f9c58606874ecd343dfb8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9ebe2c34ae7f9c58606874ecd343dfb8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b7b126974729d471eef89832fb051cdb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b7b126974729d471eef89832fb051cdb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\1b27bb0f3e5fb99419dff040ce0cb824\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\1b27bb0f3e5fb99419dff040ce0cb824\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\5c6a658238652a7f0230df2f8667a45c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\5c6a658238652a7f0230df2f8667a45c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\55cf9265050ac83bfd3fbc171fe6d2f9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\55cf9265050ac83bfd3fbc171fe6d2f9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e4284bcea19b6ce85aed70a3f46b6562\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e4284bcea19b6ce85aed70a3f46b6562\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9b67de6eea51fa6d918d5c48d96e0f01\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9b67de6eea51fa6d918d5c48d96e0f01\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7ff35f4bc83336da47a9f37c4d8ed666\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7ff35f4bc83336da47a9f37c4d8ed666\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d7dd40ed127f2044d52565a90d182b53\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d7dd40ed127f2044d52565a90d182b53\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\445ab372fdd09841a40d5b63f3884ddd\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\445ab372fdd09841a40d5b63f3884ddd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\efb337ccf6e842d37f4adcb077c4613a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\efb337ccf6e842d37f4adcb077c4613a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f562e339d50edf6b46af7ea6e80678c0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f562e339d50edf6b46af7ea6e80678c0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c8fb490d4393cc551b7fe183a6258e04\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c8fb490d4393cc551b7fe183a6258e04\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\221d9b002112bd4db6ff154613ca4684\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\221d9b002112bd4db6ff154613ca4684\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\8dbe694f5906614f023590f132c8b7bc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\8dbe694f5906614f023590f132c8b7bc\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c67b42419a990c6e4fbde7a9f5040311\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c67b42419a990c6e4fbde7a9f5040311\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f56f9997f538fbaf086e49df47d2b072\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f56f9997f538fbaf086e49df47d2b072\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7deabd22f0360c17b3d8c23597ad429d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7deabd22f0360c17b3d8c23597ad429d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c5f66c5a05901498d7251a2e603ccd1c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c5f66c5a05901498d7251a2e603ccd1c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d77c51ca0fc5b72d010e364883c5691a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d77c51ca0fc5b72d010e364883c5691a\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		ADDED from [:openCVLibrary2410] C:\Users\User\Desktop\Implementation\E-Voting Android\openCVLibrary2410\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:9-37
+	android:minSdkVersion
+		INJECTED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml
+		ADDED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\User\Desktop\Implementation\E-Voting Android\facerecognition\src\main\AndroidManifest.xml

@@ -169,7 +169,7 @@ export default class App extends React.Component {
                />
               
               <Route exxact path="/results" render={(props) =>
-                <Results {...props} results={this.state.results} fetchResults = {this.fetchresultscallback} />} 
+                <Results {...props} results={this.state.results } fetchResults = {this.fetchresultscallback} />} 
               />
               </div>
           </Router>

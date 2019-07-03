@@ -12,7 +12,7 @@ class Results extends React.Component {
                 labels: ["Bjp", "Congress", "AAP", "Others"],
                 datasets: [
                   {
-                    data: [1,0,0,0],
+                    data: [0,0,0,0],
                     backgroundColor: [
                       "#F7464A",
                       "#46BFBD",

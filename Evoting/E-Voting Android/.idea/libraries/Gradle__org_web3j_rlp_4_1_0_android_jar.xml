@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.web3j:rlp:4.1.0-android@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.web3j/rlp/4.1.0-android/28ce740337fcf45e2de70c2b8f3b24b93faefc7/rlp-4.1.0-android.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.web3j/rlp/4.1.0-android/46c0cb6743874dcb1000848c462764987772bc5e/rlp-4.1.0-android-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
