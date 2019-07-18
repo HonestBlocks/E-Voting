@@ -1,0 +1,1 @@
+[{"outputType":{"type":"MERGED_MANIFESTS"},"apkData":{"type":"MAIN","splits":[],"versionCode":24100,"versionName":"2.4.10","enabled":true,"outputFile":"openCVLibrary2410-debug.aar","fullName":"debug","baseName":"debug"},"path":"..\\..\\library_manifest\\debug\\AndroidManifest.xml","properties":{"packageId":"org.opencv","split":""}}]

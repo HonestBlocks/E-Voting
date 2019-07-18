@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "674022340859",
+    "firebase_url": "https://atd-facial-recognition-real.firebaseio.com",
+    "project_id": "atd-facial-recognition-real",
+    "storage_bucket": "atd-facial-recognition-real.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674022340859:android:52b117ac9a61ec08",
+        "android_client_info": {
+          "package_name": "cultoftheunicorn.marvel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674022340859-ckhiu3ks3uls0hug5jthrtq8ct2dfbtn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cultoftheunicorn.marvel",
+            "certificate_hash": "23e29d93bbc75c09f678229ddc2ab0021431c2e8"
+          }
+        },
+        {
+          "client_id": "674022340859-9k4euk5hbt52f4gtmfb895t6v5sqa4oi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8NbpBHpLHU8E7inzb7xiHasBe7E3fmso"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674022340859-9k4euk5hbt52f4gtmfb895t6v5sqa4oi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
