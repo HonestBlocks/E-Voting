@@ -47,5 +47,4 @@ The flow of the project is similar to what we see in everyday life.
 Altering the votes is not possible as per the consensus mechanisms used by different blockchains, 'proof of work' works fine.
 
 ## Implementation
- 1. Admin Dashboard
- 2. Android app for voting
+Implementation of Admin Dashboard and Android app for voting can be found [here](https://drive.google.com/drive/folders/103hue4pyO6MGW8CbTU8Xw1C1H2PD7Ybl?usp=sharing).
